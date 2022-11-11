@@ -1,0 +1,23 @@
+<style>
+.container{padding: 150px}body{margin: 0;padding: 0;display: flex;align-items: center;justify-content: center;min-height: 92vh;background: black}.heart{height: 100px;width: 100px;background: red;position: relative;transform: rotate(-45deg);box-shadow: -10px 10px 90px red;animation: heart 1.5s linear infinite}@keyframes heart{0%{transform: rotate(-45deg) scale(1.00)}80%{transform: rotate(-45deg) scale(0.90)}100%{transform: rotate(-45deg) scale(0.80)}}.heart::before{content: "";position: absolute;height: 100px;width: 100px;background: red;top: -55%;border-radius: 50%;box-shadow: -10px 10px 90px red}.heart::after{content: "";position: absolute;height: 100px;width: 100px;background: red;right: -55%;border-radius: 50%;box-shadow: -10px 10px 90px red}.heart-rate{width: 150px;height: 73px;position: relative;margin-top: -100px;margin-left: 100px;z-index: -1}.fade-in{position: absolute;width: 100%;height: 100%;background-color: #000;top: 0;right: 0;animation: heartRateIn 2.5s linear infinite}.fade-out{position: absolute;width: 120%;height: 100%;top: 0;left: -120%;animation: heartRateOut 2.5s linear infinite;background: rgba(0, 0, 0, 1);background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)}@keyframes heartRateIn{0%{width: 100%}50%{width: 0}100%{width: 0}}@keyframes heartRateOut{0%{left: -120%}30%{left: -120%}100%{left: 0}}.typewriter h1{color: #fff;text-align: center;width: max-content;font-family: monospace;overflow: hidden;border-right: .15em solid orange;white-space: nowrap;margin: 0 auto;letter-spacing: .15em;animation:typing 3.5s steps(30, end),blink-caret .5s step-end infinite}@keyframes typing{from{width: 0}to{width: 100%}}@keyframes blink-caret{from,to{border-color: transparent}50%{border-color: orange}}
+</style>
+<div>
+    <div class="container">
+
+        <div class="heart"></div>
+        <div class="heart-rate">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="150px" height="73px" viewBox="0 0 150 73" enable-background="new 0 0 150 73"
+                xml:space="preserve">
+                <polyline fill="none" stroke="#ffffff" stroke-width="3" stroke-miterlimit="10"
+                    points="0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486" />
+            </svg>
+            <div class="fade-in"></div>
+            <div class="fade-out"></div>
+        </div>
+
+    </div>
+    <div class="typewriter">
+        <h1>Bệu trẻ trâu...</h1>
+    </div>
+</div>
